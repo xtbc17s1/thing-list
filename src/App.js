@@ -14,12 +14,16 @@ class App extends Component {
     },
   }
 
+  thing() {
+    return {
+      id: `thing-${Date.now()}`,
+      name: '',
+    }
+  }
+
   addThing = () => {
     const things = {...this.state.things}
-    const thing = {
-      id: 'thing-4',
-      name: 'Steel-cut Irish Oatmeal',
-    }
+    const thing = this.thing()
     things[thing.id] = thing
     this.setState({ things })
   }

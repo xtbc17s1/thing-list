@@ -11,14 +11,24 @@ class App extends Component {
       'thing-1': { id: 'thing-1', name: 'Milk' },
       'thing-2': { id: 'thing-2', name: 'Bread' },
       'thing-3': { id: 'thing-3', name: 'Bibb lettuce' },
+    },
+  }
+
+  addThing = () => {
+    const things = {...this.state.things}
+    const thing = {
+      id: 'thing-4',
+      name: 'Steel-cut Irish Oatmeal',
     }
+    things[thing.id] = thing
+    this.setState({ things })
   }
 
   render() {
     return (
       <div className="App">
         <Header />
-        <AddThingButton />
+        <AddThingButton addThing={this.addThing} />
         <ThingList things={this.state.things} />
       </div>
     );

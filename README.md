@@ -10,7 +10,7 @@ Make that button work!
 
 ### Super Mega Bonus Credit
 
-Stop hard-coding _things_ altogether. Display on the things that were adding via the _Add Thing_ button.
+Stop hard-coding _things_ altogether. Display only the things that were added via the _Add Thing_ button.
 
 ### Super Mega Bonus Credit Hyper Fighting
 

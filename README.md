@@ -15,3 +15,15 @@ Stop hard-coding _things_ altogether. Display only the things that were added vi
 ### Super Mega Bonus Credit Hyper Fighting
 
 Make the _remove_ button work.
+
+## Day 7 Homework
+
+* When the checkbox is checked, mark the corresponding Thing as _completed_.
+* Be sure this gets synced to Firebase and that it persists across page refreshed.
+
+### Super Mega Bonus Credit
+
+* Add a due date to each Thing.
+* Make sure it persists.
+
+**Hint**: HTML 5 includes an input type **date**, _i.e._ `&lt;input type="date" /&gt;

@@ -19,7 +19,7 @@ Make the _remove_ button work.
 ## Day 7 Homework
 
 * When the checkbox is checked, mark the corresponding Thing as _completed_.
-* Be sure this gets synced to Firebase and that it persists across page refreshed.
+* Be sure this gets synced to Firebase and that it persists across page refreshes.
 
 ### Super Mega Bonus Credit
 

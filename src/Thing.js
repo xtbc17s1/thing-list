@@ -24,12 +24,22 @@ class Thing extends Component {
     }
   }
 
+  toggleCompletion = (ev) => {
+    const { thing, saveThing } = this.props
+    thing.completed = ev.target.checked
+    saveThing(thing)
+  }
+
   render() {
     const { thing, removeThing } = this.props
 
     return (
       <li className="Thing">
-        <input type="checkbox" value="on" />
+        <input
+          type="checkbox"
+          defaultChecked={thing.completed}
+          onChange={this.toggleCompletion}
+        />
         <div className="details">
           <ContentEditable
             className="name"
